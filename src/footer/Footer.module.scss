@@ -1,0 +1,42 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.footerTitle {
+    font: 400 40px/1.2 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 22px;
+    margin: 5px 0 10px;
+    display: block;
+}
+
+.footerBlock {
+    background-color: $bgSecondColor;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialLinks {
+    list-style: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.socialLink {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font: 400 14px/1.8 'Poppins', sans-serif;
+    display: inline-block;
+    padding: 5px 10px 0;
+}
+
+.copyright {
+    margin: 0;
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+    padding: 20px 0 0;
+    font: 400 14px/1.8 'Poppins', sans-serif;
+}

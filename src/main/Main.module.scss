@@ -1,0 +1,93 @@
+@import "../common/styles/sass/mixins.scss";
+@import "../common/styles/sass/variables";
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $bgColor;
+  padding: 85px 0 70px;
+  display: flex;
+  align-items: center;
+  .particles {
+    position: absolute;
+    width: 100%;
+    height: 94%;
+    // opacity: 0.5;
+  }
+  .photoWrapper {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 110%;
+      width: 105%;
+      border: 5px solid $primaryColor;
+      left: 15px;
+      top: -15px;
+      z-index: 1;
+    }
+  }
+  .mainContainer {
+    .photo {
+      height: 400px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      .hi {
+        @include text($textFontFamily, 14px, 1.8);
+        font-weight: 400;
+        color: #fff;
+        overflow-x: hidden;
+        padding-right: 10px;
+        letter-spacing: 1px;
+      }
+
+      h1 {
+        position: relative;
+        z-index: 1;
+
+        &.intro {
+          @include text($titleFontFamily, 40px, 1.2);
+          font-weight: 700;
+          letter-spacing: 5px;
+          margin: 0;
+          color: #fff;
+          font-size: 50px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 20px;
+          background: $primaryColor;
+          z-index: -1;
+          width: 100%;
+        }
+      }
+
+      .profession {
+        margin: 0;
+        font: 400 27px/1.8 'Poppins', sans-serif;
+        color: #fff;
+        overflow-x: hidden;
+        letter-spacing: 2px;
+      }
+    }
+
+    @media screen and (max-width: 850px) {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 45px;
+      padding: 0;
+    }
+  }
+}

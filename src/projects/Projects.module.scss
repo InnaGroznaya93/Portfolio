@@ -1,0 +1,33 @@
+@import "../common/styles/sass/variables";
+
+.projectsBlock {
+  background-color: $bgColor;
+  min-height: 100vh;
+  padding: 35px 20px;
+
+  .projectsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: initial; 
+
+    .projects {
+      /*border: 1px solid;*/
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      align-items: flex-start;
+      @media screen and (max-width: 1018px) {
+        justify-content: center;
+        gap: 25px;
+      }
+    }
+  }
+}
+
+//@media screen and (max-width: 498px) {
+//    .projects {
+//        justify-content: center;
+//    }
+//}

@@ -1,0 +1,30 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+
+.nav{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 52px;
+    z-index: 9;
+    a {
+        @include text($textFontFamily, 14px, 1.8);
+        cursor: pointer;
+        color: $textColor;
+        text-decoration: none;
+        font-family: $textFontFamily;
+        &:hover {
+            text-decoration: underline;
+        }
+        // .active {
+        //     color: $primaryColor;
+        // }
+    }
+    .active {
+        color: $primaryColor;
+    }
+    @media screen and (max-width: 400px) {
+        display: none;
+    }
+}
