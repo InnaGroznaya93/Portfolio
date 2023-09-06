@@ -31,6 +31,9 @@
     font: 400 14px/1.8 'Poppins', sans-serif;
     display: inline-block;
     padding: 5px 10px 0;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .copyright {

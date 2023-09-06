@@ -29,6 +29,9 @@
         height: 400px;
         position: relative;
         z-index: 2;
+        &:hover {
+          filter: saturate(150%);
+        }
       }
     }
     .text {

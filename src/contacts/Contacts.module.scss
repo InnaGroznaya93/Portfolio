@@ -18,26 +18,26 @@
       background-color: $bgSecondColor;
       border: 1px solid #4a4a4a;
       padding: 5px 15px;
-      border-radius: 0;
       line-height: 1.5;
       font: 400 14px/1.8 'Poppins', sans-serif;
       color: $textColor;
-      // &:-webkit-autofill {
-      //   border: 1px solid #4a4a4a;
-      //   -webkit-text-fill-color: #495057;
-      //   -webkit-box-shadow: 0 0 0 1000px #252527 inset;
-      //   transition: background-color 5000s ease-in-out 0s;
-      //   &:focus {
-      //     border: 2px solid $bgSecondColor
-      //   }  
-      // }
+     
+      &:-webkit-autofill {
+        border: 1px solid #4a4a4a;
+        -webkit-text-fill-color: #495057;
+        -webkit-box-shadow: 0 0 0 1000px #252527 inset;
+        transition: background-color 5000s ease-in-out 0s;
+        &:focus {
+          border: 2px solid $bgSecondColor
+        }  
+      }
     }
-    // button[type="submit"] {
-    //   @extend .btn;
-    //   align-self: center;
-    //   background-color: transparent;
-    //   margin-top: 30px;
-    // }
+    button[type="submit"] {
+      @extend .btn;
+      align-self: center;
+      background-color: transparent;
+      margin-top: 30px;
+    }
   }
 }
 

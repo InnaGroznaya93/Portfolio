@@ -18,6 +18,9 @@
         background-size: cover;
         background-position: center;
         position: relative;
+        &:hover {
+            filter: saturate(200%);
+        }
         &::before {
             position: absolute;
             content: "";
@@ -31,11 +34,16 @@
         .viewBtn {
             position: relative;
             z-index: 1;
-            padding: 10px 20px;
+            letter-spacing: 1px;
+            padding: 15px 30px;
             border: none;
-            background-color: $primaryColor;
+            opacity: 0.7;
+            background-color: $bgSecondColor;
             color: $textColor;
             cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
     .projectInfo {
