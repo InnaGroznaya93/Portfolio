@@ -11,28 +11,26 @@
     position: absolute;
     width: 100%;
     height: 94%;
-    // opacity: 0.5;
   }
-  .photoWrapper {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      height: 110%;
-      width: 105%;
-      border: 5px solid $primaryColor;
-      left: 15px;
-      top: -15px;
-      z-index: 1;
-    }
-  }
+  
   .mainContainer {
-    .photo {
-      height: 400px;
+    .photoWrapper {
       position: relative;
-      z-index: 2;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 110%;
+        width: 105%;
+        border: 5px solid $primaryColor;
+        left: 15px;
+        top: -15px;
+      }
+      .photo {
+        height: 400px;
+        position: relative;
+        z-index: 2;
+      }
     }
-
     .text {
       display: flex;
       flex-direction: column;
